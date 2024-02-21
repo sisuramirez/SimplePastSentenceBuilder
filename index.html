@@ -13,9 +13,9 @@
       <section class="content-section">
         <article class="sentence-builder">
           <div class="sentence-builder-item sentence-builder__subject">
-            <h3 class="sentence-builder__subject-title">Subject</h3>
-            <label class="sentence-builder__subject-label" for="subject">Select a subject:</label>
-            <select id="selected-subject" name="subject" class="sentence-builder__subject-select">
+            <h3 class="sentence-builder__subject-title sentence-builder__item-title">Subject</h3>
+            <label class="sentence-builder__subject-label sentence-builder__label" for="subject">Select a subject:</label>
+            <select id="selected-subject" name="subject" class="sentence-builder__select-form">
               <option value=""  >Select your subject</option>
               <option value="i">I</option>
               <option value="you">You</option>
@@ -28,32 +28,34 @@
             </select>
           </div>
           <div class="sentence-builder-item sentence-builder__verb">
-            <h3 class="sentence-builder__verb-title">
+            <h3 class="sentence-builder__verb-title sentence-builder__item-title">
               Regular/Irregular Verbs
             </h3>
-            <label for="regular_irregular">Select Between Regular or Irregular verbs</label>
-            <select id="regular_irregular" name="regular_irregular">
-              <option value="regular">Regular/Irregular</option>
+            <label for="regular_irregular" class="sentence-builder__label">Select Between Regular or Irregular verbs</label>
+            <select id="regular_irregular" name="regular_irregular" class="sentence-builder__select-form">
+              <option value="verb_type">Choose verb type</option>
               <option value="regular">Regular</option>
               <option value="Irregular">Irregular</option>
             </select>
-            <h3 class="sentence-builder__verb-title">Choose your verb</h3>
+            <h3 class="sentence-builder__verb-title sentence-builder__item-title">Choose your verb</h3>
             <label for="selected_verb" class="sentence-builder__verb-label">Select your verb</label>
-            <select id="selected_verb"name="selected_verb" class="sentence-builder__verb-select">
+            <select id="selected_verb"name="selected_verb" class="sentence-builder__verb-select sentence-builder__select-form">
               <!-- Options will be dynamically populated based on user's selection -->
             </select>
           </div>
           <div class="sentence-builder-item sentence-builder__complement">
-            <h3 class="sentence-builder__title">Type your complement</h3>
-            <input classname="sentence-builder__complement-textbox" 
+            <h3 class="sentence-builder__title sentence-builder__item-title">Type your complement</h3>
+            <input class="sentence-builder__complement-textbox" 
               type="text"
               name="userInput" 
               id="userInput"
               placeholder="Type something..." />
           </div>
         </article>
-        <button id="merge-button">Merge</button>
-        <button id="clear-text-button">Clear Text</button>
+        <div class="button-container">
+          <button id="merge-button">Merge</button>
+          <button id="clear-text-button">Clear Text</button>
+        </div>
         <div class="sentence-builder__result" id="sentence-builder__result-section">
         </div>
       </section>

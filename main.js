@@ -13,6 +13,8 @@ const mergeButton = document.getElementById("merge-button");
 /*Button to clear all the text*/
 const clearTextButton = document.getElementById("clear-text-button");
 
+
+
 /* Invoked when a verb type is selected; calls the populateVerbs function */
 verbTypeSelector.addEventListener("change", () => {
   populateVerbs();
@@ -67,6 +69,8 @@ function mergeText() {
  function clearText() {
   sentenceBuilderResultSection.innerHTML = " ";
  }
+
+
  
 function addTexts(arrayAIterarCuandoInvoquemos) {
   sentenceBuilderResultSection.innerHTML = " ";
